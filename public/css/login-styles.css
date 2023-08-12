@@ -9,10 +9,6 @@ img {
     max-width: 100%;
     max-height: 100%;
 }
-/*Para darle un efecto mas suave al apretar el boton "ofertas"*/
-html {
-    scroll-behavior: smooth;
-}
 
 /* ------------------------> HEADER <------------------------ */
 header {
@@ -111,99 +107,6 @@ nav ul {
     height: auto;
 }
 
-
-/* ------------------------> BODY // MAIN <------------------------ */
-body {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: #ebebeb;
-}
-
-main {
-    font-weight: bold;
-    color: #404040;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 90%;
-}
-
-main * {
-    width: 100%;
-}
-
-main article {
-    margin-top: 10px;
-}
-
-main article h2 {
-    margin-bottom: 10px;
-}
-
-.detalles-producto {
-    padding: 15px;
-    background-color: white;
-    border-top: 5px solid #ebebeb;
-}
-
-.delivery-icon {
-    position: relative;
-}
-
-.detalles-producto .delivery-icon i {
-    width: auto;
-    color: green;
-    border: 1px green solid;
-    border-radius: 50%;
-    padding: 3px;
-    position: absolute;
-    left: 85%;
-    top: -7px;
-}
-
-.detalles-producto .descuento {
-    color: green;
-}
-
-.descripciones {
-    display: none;
-}
-
-
-.detalles-producto .precio {
-    width: 30%;
-}
-
-.detalles-producto .descuento {
-    width: 70%;
-}
-
-
-/*Footer*/
-footer section{
-    background-color: white;
-    padding:5%;
-    width: 90%;
-    margin: auto;
-    text-align: center;
-}
-    .iconos-pie-de-pagina{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-.iconos-pie-de-pagina i{
-    color: #1259c3;
-    font-size: 2em;
-}
-.content{
-    margin-top: 25px;
-    margin-bottom: 50px;
-}
-
-
-
 @media (min-width:480px) {
     main article {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
@@ -214,14 +117,12 @@ footer section{
         font-size: 15px
     }
 
-
-    .descripciones {
-        display: inline-block;
-    }
-
     .search-icon i {
         left: -5vw;
         top: 1.5vw;
+    }
+    .burger-menu {
+        display: none;
     }
     .nav-bar .items-bar {
         display: flex;
@@ -239,27 +140,8 @@ footer section{
     .nav-bar .items-bar a{
         font-size: 3vw;
     }
-    .burger-menu{
-        display: none;
-    }
 
-    .product-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    .product-container .product {
-        flex-basis: 40%;
-    }
-    .section-1 {
-        margin-bottom: 5%;
-    }
-    .detalles-producto{
-        border-top: 1px solid #ebebeb;
-    }
 }
-
-
 
 @media (min-width:769px) {
     /*Desktop & Tablets*/
@@ -283,11 +165,6 @@ footer section{
     .nav-bar .items-bar a {
         font-size: 1.3vw;
     }
-
-    main article {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-
     .search-bar input {
         font-size: 125%;
     }
@@ -295,37 +172,8 @@ footer section{
     .burger-menu {
         display: none;
     }
-
-    .descripciones {
-        font-size: 1.23vw
-    }
-    .detalles-producto{
-        margin-top: 3%;
-        border-top:5px solid #ebebeb
-    }
-    .detalles-producto p {
-        font-size: 2vw;
-    }
-
     .search-icon i {
         left: -5vw;
         top: 2vw;
-    }
-    .product {
-        background-color: white;
-    }
-    .product-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin-bottom: 10vh;
-    }
-    .product-container .product {
-        flex-basis: 23%;
-        margin:auto;
-        height: 100%
-    }
-    .detalles-producto .delivery-icon i{
-        
     }
 }
