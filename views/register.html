@@ -51,13 +51,62 @@
     <section class="form-main">
         <h1 class="main-title">Regsitrese</h1>
         <form action="registro" method="post">
+            <!-- Nombre -->
             <label for="name">Nombre: </label>
             <input type="text" name="name" id="name" placeholder="Ingrese su nombre..." required>
+            <!-- Apellido -->
             <label for="surname">Apellido: </label>
             <input type="text" name="surname" id="surname" placeholder="Ingrese su apellido..." required>
-            <label for="date-birth">Fecha de Nacimiento: </label>
-            <input type="date" name="date-birth" id="date-birth">
-            <button type="submit">Enviar</button><button type="reset">Borrar</button>
+            <!-- Nombre de usuario -->
+            <label for="nickname">Nombre de usuario: </label>
+            <input type="text" name="nickanme" id="nickname" placeholder="Ingrese sunombre de usuario..." required>
+            <!-- Fecha de nacimiento -->
+            <label for="date-birth">Fecha de nacimiento: </label>
+            <input type="date" name="date-birth" id="date-birth" required>
+            <!-- Domicilio -->
+            <div class="domicilio">
+                <h3>Domicilio</h3>
+                <label for="country">Seleccione su pais de residencia: </label>
+                <select name="country" id="country" required>
+                    <option value="USA">Estados Unidos</option>
+                    <option value="brasil">Brazil</option>
+                    <option value="argentina">Argentina</option>
+                    <option value="uruguay">Uruguay</option>
+                    <option value="chile">Chile</option>
+                    <option value="mexico">Mexico</option>
+                </select>
+                <label for="adress-details">Especifique su domicilio: </label>
+                <input type="text" name="street" id="street" placeholder="Ingrese su calle..." required>
+                <input type="number" name="house-number" id="house-number" placeholder="ingrese su numero..." required>
+                <input type="number" name="post-code" id="post-code" placeholder="Codigo Postal..." required>
+            </div>
+            <label for="account-type">¿Qué le interesa hacer con su cuenta?</label>
+            <label for="sell-option">Me interesa vender </label>
+            <input type="checkbox" name="sell-option" id="sell-option">
+            <label for="buy-option"> Me interesa comprar </label>
+            <input type="checkbox" name="buy-option" id="buy-option">
+            <div class="preferencies">
+                <h3>¡Nos interesa saber tus gustos!</h3>
+                <label for="categories">Selecciona las categorias que más te gustan</label>
+                <label for="electro">Electro</label>
+                <input type="checkbox" name="electro" id="electro">
+                <label for="moda">Moda</label>
+                <input type="checkbox" name="moda" id="moda">
+                <label for="home">Hogar</label>
+                <input type="checkbox" name="home" id="home">
+                <label for="toys">Juguetería</label>
+                <input type="checkbox" name="toys" id="toys">
+                <label for="healthy">Vida Sana</label>
+                <input type="checkbox" name="healthy" id="healthy">
+            </div>
+            <label for="user-photo">¡Podes subir una foto de usuario para decorar tu perfil!</label>
+            <input type="file" name="user-photo" id="user-photo">
+            <label for="password">Ingrese su contraseña: </label>
+            <input type="password" name="password" id="password" required>
+            <label for="repeat-password">Confirmar contraseña: </label>
+            <input type="password" name="repeat-password" id="repeat-password" required>
+            <a href="/">Enviar</a>
+            <button type="reset">Borrar</button>
         </form>
     </section>
 </body>
