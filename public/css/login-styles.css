@@ -79,8 +79,6 @@ nav ul {
     list-style: none;
 }
 
-
-
 .burger-menu {
     border-radius: 10%;
     margin: auto;
@@ -106,6 +104,7 @@ nav ul {
     max-width: 100%;
     height: auto;
 }
+
 
 @media (min-width:480px) {
     main article {
@@ -142,6 +141,8 @@ nav ul {
     }
 
 }
+
+/*SECCION LOGIN*/
 
 @media (min-width:769px) {
     /*Desktop & Tablets*/

@@ -326,6 +326,6 @@ footer section{
         height: 100%
     }
     .detalles-producto .delivery-icon i{
-        
+         padding: 2.5%;
     }
 }
