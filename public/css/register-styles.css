@@ -10,6 +10,10 @@ img {
     max-height: 100%;
 }
 
+body {
+    background-color: #ebebeb;
+}
+
 /* ------------------------> HEADER <------------------------ */
 header {
     background-color: #EAC926;
@@ -101,12 +105,120 @@ nav ul {
     font-size: 7vw;
 }
 
+/* ------------------------> BANNER <------------------------ */
 .banner img {
     display: block;
     max-width: 100%;
     height: auto;
 }
 
+/* ------------------------> FORM <------------------------ */
+.all-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+.form-main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: white;
+    border-radius: 15px;
+    width: 90%;
+}
+
+label {
+    display: block;
+    font-size: 3vw;
+    margin-bottom: 1.5%;
+}
+
+input {
+    margin-bottom: 8%;
+    border: 2px solid black;
+    border-radius: 5px;
+    transition: all 0.8s;
+}
+input:active, input:focus{
+   border-color: rgb(0, 170, 255);
+   outline: none;
+}
+.form-main h2 {
+    font-size: 1rem;
+}
+
+.form-main .main-title {
+    font-size: 10vw;
+    margin: auto;
+    margin-bottom: 5%;
+}
+
+.general-inputs input {
+    width: 50%;
+}
+
+.adress-title {
+    font-size: 6vw;
+}
+
+.account-type-label {
+    display: inline-block;
+    width: 50%;
+}
+
+.checkbox {
+    display: inline;
+    width: 50px;
+}
+
+.user-photo {
+    font-size: 5vw;
+    margin-right: 20%;
+}
+
+#input-user-photo {
+    width: 60%;
+}
+
+.send-button {
+    text-decoration: none;
+    color: black;
+    padding: 2px;
+    border-radius: 5px;
+    border: 1px gray solid;
+    background-color: white;
+    margin-right: 7%;
+    transition: all 1s;
+}
+
+.send-button:hover {
+    border-color: rgb(1, 89, 1);
+    background-color: rgb(159, 255, 159);
+    color: green;
+}
+
+
+.reset-button {
+    padding: 3px;
+    border-radius: 5px;
+    border: 1px gray solid;
+    text-decoration: none;
+    background-color: white;
+    transition: all 1s;
+}
+
+.reset-button:hover {
+    background-color: rgb(255, 121, 121);
+    border-color: rgb(154, 0, 0);
+    color: red;
+}
 @media (min-width:480px) {
     main article {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
@@ -121,9 +233,11 @@ nav ul {
         left: -5vw;
         top: 1.5vw;
     }
+
     .burger-menu {
         display: none;
     }
+
     .nav-bar .items-bar {
         display: flex;
         text-align: center;
@@ -132,12 +246,14 @@ nav ul {
         flex-wrap: wrap;
         width: 38%;
     }
+
     .nav-bar {
         font-size: 16vw;
         display: flex;
         justify-content: space-between;
     }
-    .nav-bar .items-bar a{
+
+    .nav-bar .items-bar a {
         font-size: 3vw;
     }
 
@@ -168,6 +284,7 @@ nav ul {
     .nav-bar .items-bar a {
         font-size: 1.3vw;
     }
+
     .search-bar input {
         font-size: 125%;
     }
@@ -175,6 +292,7 @@ nav ul {
     .burger-menu {
         display: none;
     }
+
     .search-icon i {
         left: -5vw;
         top: 2vw;
