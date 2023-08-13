@@ -50,14 +50,20 @@
         <section class="banner">
             <img src="images/img-home-banner.jpg" alt="banner de ofertas">
         </section>
-        <section>
+        <section class="main-section">
             <form action="POST">
-                <h1>Inicio de Sesion</h1>
-                <label for="name">Ingrese su nombre de usuario: </label>
-                <input type="text" name="name" id="name" placeholder="Nombre de usuario" required>
-                <label for="password">Ingrese su contraseña: </label>
-                <input type="password" name="password" id="password" placeholder="Ingrese su contraseña" required>
-                <a href="/">Enviar</a>
+                <h1 class="main-title">Inicio de Sesion</h1>
+                <label for="name" class="name-label">Ingrese su nombre de usuario: </label>
+                <div class="input-general">
+                    <input type="text" name="name" id="name" placeholder="Nombre de usuario" required>
+                </div>
+
+                <label for="password" class="password-label">Ingrese su contraseña: </label>
+                <div class="input-general">
+                    <input type="password" name="password" id="password" placeholder="Ingrese su contraseña" required>
+                </div>
+                <a href="#" class="forgot-password">¿Olvidó su contraseña? Click Aquí para recuperarla</a>
+                <a href="/" class="send-button">Enviar</a>
             </form>
         </section>
     </main>

@@ -120,9 +120,11 @@ nav ul {
         left: -5vw;
         top: 1.5vw;
     }
+
     .burger-menu {
         display: none;
     }
+
     .nav-bar .items-bar {
         display: flex;
         text-align: center;
@@ -131,18 +133,156 @@ nav ul {
         flex-wrap: wrap;
         width: 38%;
     }
+
     .nav-bar {
         font-size: 16vw;
         display: flex;
         justify-content: space-between;
     }
-    .nav-bar .items-bar a{
+
+    .nav-bar .items-bar a {
         font-size: 3vw;
     }
 
 }
 
 /*SECCION LOGIN*/
+body {
+    background-color: #ebebeb;
+    animation: change-color 15s infinite;
+}
+
+@keyframes change-color {
+    0% {
+        background-color: #ebebeb;
+    }
+
+    25% {
+        background-color: #f8df5e;
+    }
+
+    50% {
+        background-color: #EAC926;
+    }
+
+    75% {
+        background-color: #f8df5e;
+    }
+
+    100% {
+        background-color: #ebebeb;
+    }
+}
+
+.main-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: white;
+    border-radius: 15px;
+    width: 90%;
+}
+
+.main-section .main-title {
+    color: #9bc3ff;
+    background-color: #fcea90;
+    text-align: center;
+    position: relative;
+    font-size: 5vw;
+    animation: change-color-2 5s 1;
+    border: 3.5px rgb(0, 0, 0) solid;
+    border-radius: 15px;
+    padding: 5%;
+    animation-fill-mode: forwards;
+}
+
+@keyframes change-color-2 {
+    0% {
+    }
+    100% {
+        color: #1259c3;
+        background-color: #ffd500;
+    }
+}
+
+label {
+    display: block;
+    font-size: 3vw;
+    margin-bottom: 1.5%;
+}
+
+input {
+    margin-bottom: 8%;
+    border: 2px solid black;
+    border-radius: 5px;
+    transition: all 0.5s;
+    width: 90%;
+}
+
+input:active,
+input:focus {
+    border-color: rgb(0, 170, 255);
+    outline: none;
+}
+
+.input-general {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.send-button {
+    text-decoration: none;
+    color: black;
+    padding: 2px;
+    border-radius: 5px;
+    border: 1px gray solid;
+    background-color: white;
+    margin-right: 7%;
+    transition: all 1s;
+}
+
+.send-button:hover {
+    border-color: rgb(1, 89, 1);
+    background-color: rgb(159, 255, 159);
+    color: green;
+}
+.forgot-password{
+    text-decoration: none;
+    color: black;
+}
+.forgot-password:hover{
+    animation: arcoiris 7s infinite;
+}
+@keyframes arcoiris {
+  0% {
+    color: red;
+  }
+  14% {
+    color: orange;
+  }
+  28% {
+    color: yellow;
+  }
+  42% {
+    color: green;
+  }
+  57% {
+    color: blue;
+  }
+  71% {
+    color: indigo;
+  }
+  85% {
+    color: violet;
+  }
+  100% {
+    color: red;
+  }
+}
 
 @media (min-width:769px) {
     /*Desktop & Tablets*/
@@ -166,6 +306,7 @@ nav ul {
     .nav-bar .items-bar a {
         font-size: 1.3vw;
     }
+
     .search-bar input {
         font-size: 125%;
     }
@@ -173,8 +314,23 @@ nav ul {
     .burger-menu {
         display: none;
     }
+
     .search-icon i {
         left: -5vw;
         top: 2vw;
+    }
+    .main-section .main-title{
+        animation: slide-and-color-change 5s 1 forwards;
+
+    }
+    @keyframes slide-and-color-change {
+        0% {
+            left: 0;
+        }
+        100% {
+            left: 15%;
+            color: #1259c3;
+            background-color: #ffd500;
+        }
     }
 }
