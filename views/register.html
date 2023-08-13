@@ -52,7 +52,9 @@
     </section>
     <section class="all-form">
         <div class="form-main">
-            <h1 class="main-title">Registrese</h1>
+            <div class="container-main-title">
+                <h1 class="main-title">Registrese</h1>
+            </div>
             <form action="registro" method="post">
                 <!-- Nombre -->
                 <label for="name">Nombre: </label>
@@ -111,17 +113,17 @@
                 <!-- PREFERENCIAS -->
                 <div class="preferencies">
                     <h2>¡Nos interesa saber tus gustos!</h2>
-                    <label for="categories">Selecciona las categorias que más te gustan</label>
+                    <label for="categories" id="label-categories">Selecciona las categorias que más te gustan</label>
                     <label for="electro">Electro</label>
-                    <input type="checkbox" name="electro" id="electro">
+                    <input type="checkbox" name="electro" id="electro" class="checkbox">
                     <label for="moda">Moda</label>
-                    <input type="checkbox" name="moda" id="moda">
+                    <input type="checkbox" name="moda" id="moda" class="checkbox">
                     <label for="home">Hogar</label>
-                    <input type="checkbox" name="home" id="home">
+                    <input type="checkbox" name="home" id="home" class="checkbox">
                     <label for="toys">Juguetería</label>
-                    <input type="checkbox" name="toys" id="toys">
+                    <input type="checkbox" name="toys" id="toys" class="checkbox">
                     <label for="healthy">Vida Sana</label>
-                    <input type="checkbox" name="healthy" id="healthy">
+                    <input type="checkbox" name="healthy" id="healthy" class="checkbox">
                 </div>
                 <!-- FOTO DE PERFIL -->
                 <label for="user-photo" class="user-photo">¡Podes subir una foto de usuario para decorar tu
@@ -129,9 +131,9 @@
                 <input type="file" name="user-photo" id="input-user-photo" accept=".jpg">
                 <!-- CONTRASEÑA -->
                 <label for="password">Ingrese su contraseña: </label>
-                <input type="password" name="password" id="password" minlength="8" required>
+                <input type="password" class="password-input" name="password" id="password" minlength="8" required>
                 <label for="repeat-password">Confirmar contraseña: </label>
-                <input type="password" name="repeat-password" id="repeat-password" minlength="8" required>
+                <input type="password" class="password-input" name="repeat-password" id="repeat-password" minlength="8" required>
                 <!-- BOTONES -->
                 <br>
                 <a href="/" class="send-button">Enviar</a>

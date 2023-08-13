@@ -12,8 +12,25 @@ img {
 
 body {
     background-color: #ebebeb;
+    animation: change-color 10s infinite;
 }
-
+@keyframes change-color {
+    0%{
+        background-color: #ebebeb;
+    }
+    25%{
+        background-color: #f8df5e;
+    }
+    50% {
+        background-color: #EAC926;
+    }
+    75% {
+        background-color: #f8df5e;
+    }
+    100% {
+        background-color: #ebebeb;
+    }
+}
 /* ------------------------> HEADER <------------------------ */
 header {
     background-color: #EAC926;
@@ -144,7 +161,7 @@ input {
     margin-bottom: 8%;
     border: 2px solid black;
     border-radius: 5px;
-    transition: all 0.8s;
+    transition: all 0.5s;
 }
 input:active, input:focus{
    border-color: rgb(0, 170, 255);
@@ -153,18 +170,40 @@ input:active, input:focus{
 .form-main h2 {
     font-size: 1rem;
 }
-
-.form-main .main-title {
+/*Decoracion al titulo (es un test sacado de internet)*/
+.form-main .container-main-title{
     font-size: 10vw;
     margin: auto;
     margin-bottom: 5%;
+    color: transparent;
+    background-color: #dc1e14;
+    background-image: repeating-linear-gradient(45deg,    transparent, transparent 25px,        rgba(255,255,255,.5) 25px, rgba(255,255,255,.5) 50px);
+     -webkit-background-clip: text;
+      background-clip: text;   
+    animation: color 50s linear infinite; 
+    background-size: 200%;  
+    -webkit-transform: translate3d(0,0,0);
+    -webkit-backface-visibility: hidden;
 }
-
+.form-main .main-title {
+    font-size: 10vw;
+ text-transform: uppercase;
+}
+@keyframes color {
+    from { 
+      background-position: 0% 50%;
+    }
+    to { 
+      background-position: 100% 50%; 
+    }
+  }
+  /*Continuamo con cambio y detalles minimos*/
 .general-inputs input {
     width: 50%;
 }
 
 .adress-title {
+    text-decoration: underline;
     font-size: 6vw;
 }
 
@@ -172,21 +211,43 @@ input:active, input:focus{
     display: inline-block;
     width: 50%;
 }
-
+.preferencies{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.preferencies h2{
+    margin-bottom: 5%;
+}
+.preferencies #label-categories{
+    width: 100%;
+    margin-bottom: 5%;
+}
+.preferencies label{
+    font-size: 15px;
+    display: inline;
+}
+.preferencies input{
+    position: relative;
+    top: 5px;
+}
 .checkbox {
     display: inline;
     width: 50px;
 }
 
 .user-photo {
-    font-size: 5vw;
+    font-size: 4.3vw;
+    font-weight: bold;
     margin-right: 20%;
 }
 
 #input-user-photo {
     width: 60%;
 }
-
+.password-input{
+    width: 50%;
+}
 .send-button {
     text-decoration: none;
     color: black;
@@ -215,7 +276,7 @@ input:active, input:focus{
 }
 
 .reset-button:hover {
-    background-color: rgb(255, 121, 121);
+    background-color: rgb(252, 150, 150);
     border-color: rgb(154, 0, 0);
     color: red;
 }
@@ -296,5 +357,12 @@ input:active, input:focus{
     .search-icon i {
         left: -5vw;
         top: 2vw;
+    }
+
+    .preferencies #label-categories{
+        font-size: 25px;
+    }
+    .preferencies label {
+        font-size: 18px;
     }
 }
