@@ -179,7 +179,35 @@ main article h2 {
     width: 70%;
 }
 
+/*Keyframes y animaciones del main*/
+.product{
+    position: relative;
+}
+.detalles-producto .descripciones{
+  opacity: 0;
+}
 
+.product:hover .delivery-icon i{
+    animation: rotate 0.8s forwards;
+}
+@keyframes rotate{
+    50%{
+        transform: rotate(-90deg);
+    }
+}
+.product:hover .image-product{
+    opacity: 0.8;
+}
+
+.product:hover .detalles-producto .descripciones{
+    animation: appearing 0.3s forwards;
+}
+@keyframes appearing {
+    100%{
+        opacity: 1;
+        
+    }
+}
 /*Footer*/
 footer section{
     background-color: white;
@@ -197,11 +225,14 @@ footer section{
     color: #1259c3;
     font-size: 2em;
 }
-.content{
-    margin-top: 25px;
-    margin-bottom: 50px;
+.container{
+    margin-bottom: 8%;
 }
-
+.copyright{
+    width: 100%;
+    margin-top: 5%;
+    align-items: center;
+}
 
 
 @media (min-width:480px) {
@@ -328,4 +359,18 @@ footer section{
     .detalles-producto .delivery-icon i{
          padding: 2.5%;
     }
+    .footer-section-content{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer-section-content .container{
+        display: flex;
+        flex-direction: column;
+        max-width: 32%;
+        justify-content: center;
+    }
+    .footer-section-content .container p{
+        font-size: 17px;
+    }
+    
 }
