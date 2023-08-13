@@ -104,46 +104,10 @@ nav ul {
     max-width: 100%;
     height: auto;
 }
+ /*Keyframes y Animaciones del nav*/
 
-
-@media (min-width:480px) {
-    main article {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-
-
-    * {
-        font-size: 15px
-    }
-
-    .search-icon i {
-        left: -5vw;
-        top: 1.5vw;
-    }
-
-    .burger-menu {
-        display: none;
-    }
-
-    .nav-bar .items-bar {
-        display: flex;
-        text-align: center;
-        justify-content: space-between;
-        gap: 15px;
-        flex-wrap: wrap;
-        width: 38%;
-    }
-
-    .nav-bar {
-        font-size: 16vw;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .nav-bar .items-bar a {
-        font-size: 3vw;
-    }
-
+.nav-bar .items-bar a:hover{
+    text-decoration: underline;
 }
 
 /*SECCION LOGIN*/
@@ -282,6 +246,46 @@ input:focus {
   100% {
     color: red;
   }
+}
+
+@media (min-width:480px) {
+    main article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+
+    * {
+        font-size: 15px
+    }
+
+    .search-icon i {
+        left: -5vw;
+        top: 1.5vw;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .nav-bar .items-bar {
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        gap: 15px;
+        flex-wrap: wrap;
+        width: 38%;
+    }
+
+    .nav-bar {
+        font-size: 16vw;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-bar .items-bar a {
+        font-size: 3vw;
+    }
+
 }
 
 @media (min-width:769px) {

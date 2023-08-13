@@ -14,23 +14,29 @@ body {
     background-color: #ebebeb;
     animation: change-color 10s infinite;
 }
+
 @keyframes change-color {
-    0%{
+    0% {
         background-color: #ebebeb;
     }
-    25%{
+
+    25% {
         background-color: #f8df5e;
     }
+
     50% {
         background-color: #EAC926;
     }
+
     75% {
         background-color: #f8df5e;
     }
+
     100% {
         background-color: #ebebeb;
     }
 }
+
 /* ------------------------> HEADER <------------------------ */
 header {
     background-color: #EAC926;
@@ -122,6 +128,12 @@ nav ul {
     font-size: 7vw;
 }
 
+/*Keyframes y Animaciones del nav*/
+
+.nav-bar .items-bar a:hover {
+    text-decoration: underline;
+}
+
 /* ------------------------> BANNER <------------------------ */
 .banner img {
     display: block;
@@ -163,41 +175,49 @@ input {
     border-radius: 5px;
     transition: all 0.5s;
 }
-input:active, input:focus{
-   border-color: rgb(0, 170, 255);
-   outline: none;
+
+input:active,
+input:focus {
+    border-color: rgb(0, 170, 255);
+    outline: none;
 }
+
 .form-main h2 {
     font-size: 1rem;
 }
+
 /*Decoracion al titulo (es un test sacado de internet)*/
-.form-main .container-main-title{
+.form-main .container-main-title {
     font-size: 10vw;
     margin: auto;
     margin-bottom: 5%;
     color: transparent;
     background-color: #dc1e14;
-    background-image: repeating-linear-gradient(45deg,    transparent, transparent 25px,        rgba(255,255,255,.5) 25px, rgba(255,255,255,.5) 50px);
-     -webkit-background-clip: text;
-      background-clip: text;   
-    animation: color 50s linear infinite; 
-    background-size: 200%;  
-    -webkit-transform: translate3d(0,0,0);
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 25px, rgba(255, 255, 255, .5) 25px, rgba(255, 255, 255, .5) 50px);
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: color 50s linear infinite;
+    background-size: 200%;
+    -webkit-transform: translate3d(0, 0, 0);
     -webkit-backface-visibility: hidden;
 }
+
 .form-main .main-title {
     font-size: 10vw;
- text-transform: uppercase;
+    text-transform: uppercase;
 }
+
 @keyframes color {
-    from { 
-      background-position: 0% 50%;
+    from {
+        background-position: 0% 50%;
     }
-    to { 
-      background-position: 100% 50%; 
+
+    to {
+        background-position: 100% 50%;
     }
-  }
-  /*Continuamo con cambio y detalles minimos*/
+}
+
+/*Continuamo con cambio y detalles minimos*/
 .general-inputs input {
     width: 50%;
 }
@@ -211,26 +231,32 @@ input:active, input:focus{
     display: inline-block;
     width: 50%;
 }
-.preferencies{
+
+.preferencies {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.preferencies h2{
+
+.preferencies h2 {
     margin-bottom: 5%;
 }
-.preferencies #label-categories{
+
+.preferencies #label-categories {
     width: 100%;
     margin-bottom: 5%;
 }
-.preferencies label{
+
+.preferencies label {
     font-size: 15px;
     display: inline;
 }
-.preferencies input{
+
+.preferencies input {
     position: relative;
     top: 5px;
 }
+
 .checkbox {
     display: inline;
     width: 50px;
@@ -245,9 +271,11 @@ input:active, input:focus{
 #input-user-photo {
     width: 60%;
 }
-.password-input{
+
+.password-input {
     width: 50%;
 }
+
 .send-button {
     text-decoration: none;
     color: black;
@@ -280,6 +308,7 @@ input:active, input:focus{
     border-color: rgb(154, 0, 0);
     color: red;
 }
+
 @media (min-width:480px) {
     main article {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
@@ -359,9 +388,10 @@ input:active, input:focus{
         top: 2vw;
     }
 
-    .preferencies #label-categories{
+    .preferencies #label-categories {
         font-size: 25px;
     }
+
     .preferencies label {
         font-size: 18px;
     }

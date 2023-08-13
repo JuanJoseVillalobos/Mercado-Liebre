@@ -111,7 +111,11 @@ nav ul {
     height: auto;
 }
 
+/*Keyframes y Animaciones del nav*/
 
+.nav-bar .items-bar a:hover{
+    text-decoration: underline;
+}
 /* ------------------------> BODY // MAIN <------------------------ */
 body {
     display: flex;
@@ -366,7 +370,7 @@ footer section{
     .footer-section-content .container{
         display: flex;
         flex-direction: column;
-        max-width: 32%;
+        max-width: 30%;
         justify-content: center;
     }
     .footer-section-content .container p{
